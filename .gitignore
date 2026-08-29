@@ -1,0 +1,38 @@
+# ==========================================================
+#  SAFETY NET — do not delete this file.
+#
+#  Two files reach the internet, and nothing else:
+#
+#      docs/index.html      the teaser page
+#      docs/bear.png        the render it shows
+#
+#  The real site, every asset, the audio, the renders, this
+#  folder's backups — all ignored. `git add .` cannot leak
+#  them. Even a stray file dropped into docs/ stays put
+#  unless it is named below.
+#
+#  When you're ready to launch, see README.md.
+# ==========================================================
+
+# ignore everything at the top level...
+/*
+
+# ...except the safety net and the published folder
+!/.gitignore
+!/docs/
+
+# inside docs/, ignore everything...
+/docs/*
+
+# ...except the two teaser files.
+# Adding a new teaser? Add its filename here, on its own line.
+!/docs/index.html
+!/docs/bear.png
+
+# never publish these, ever
+*.psd
+*.blend
+*.blend1
+*.fbm/
+Thumbs.db
+.DS_Store
